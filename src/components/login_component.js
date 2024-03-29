@@ -70,7 +70,7 @@ export default class Login extends Component {
             </h2> {/* Added the smiling emoji after Welcome Back */}
 
             <div className="mb-3">
-              <label>Email address</label>
+              <label>E-mail address</label>
               <input
                 type="email"
                 className="form-control"
