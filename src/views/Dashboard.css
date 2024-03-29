@@ -1,0 +1,17 @@
+.floating-cards {
+    position: relative;
+    animation: floatAnimation 2s infinite ease-in-out;
+  }
+  
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

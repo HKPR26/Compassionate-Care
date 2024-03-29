@@ -1,0 +1,25 @@
+.image-card {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect for image card */
+  transition: transform 0.5s ; /* Add transition for smooth zoom effect */
+  margin: 0 1rem; /* Add some margin between cards */
+}
+
+.image-card:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.card-image {
+  width: 100%; /* Ensure the image takes full width of the card */
+  height: 100%; /* Ensure the image takes full height of the card */
+  object-fit: cover; /* Cover the entire card area */
+}
+
+.shadow-button {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect for button */
+}

@@ -1,0 +1,17 @@
+h1,
+
+h3 {
+  font-style: oblique!important;
+  text-align: center!important;
+  color: white!important;
+}
+div {
+  height: "100vh"!important;
+}
+.icon{
+  display: flex!important;
+  justify-content: center!important;
+}
+.white-text {
+  color: white;
+}

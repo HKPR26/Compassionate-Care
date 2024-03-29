@@ -1,0 +1,56 @@
+
+:root{
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mar{
+    margin-top: 1rem;
+}
+
+.cent{
+    text-align: center;
+}
+
+.height{
+    height: 100vh;
+    width: 100vw;
+}
+
+.mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wid{
+    width: 4rem;
+}
+
+.width{
+    width: 18rem;
+}
+
+.none{
+    text-decoration: none;
+}
+
+.custom-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.inp{
+    border: px;
+    border-radius: 0.2rem;
+}
+.link{
+    color: blue;
+    margin-left: 5px;
+}
