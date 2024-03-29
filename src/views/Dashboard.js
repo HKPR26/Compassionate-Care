@@ -4,8 +4,7 @@ import { Line, Pie, Bar } from "react-chartjs-2";
 import backgroundImage from "../assets/homeee.png"; // Import your background image
 import alzheimersImage from "../assets/6425307.jpg";
 import second from "../assets/favicon.png";
-import third from "../assets/hehe.jpg"
- // Import Alzheimer's image
+import third from "../assets/hehe.jpg";
 import "./Dashboard.css"; // Import CSS for animations
 
 function Dashboard() {
@@ -40,8 +39,28 @@ function Dashboard() {
 
   return (
     <div className="content" style={{ backgroundImage: `url(${backgroundImage})`, animation: "floatAnimation 3s infinite alternate" }}>
-      {/* Cards Section */}
+      {/* Alzheimer's Card */}
       <h1 style={{ textAlign: 'center', marginBottom: '30px' }}>DASHBOARD</h1>
+      <Row>
+        <Col md="12">
+          <Card className="card-chart">
+            <CardHeader>
+              <CardTitle tag="h2">About Alzheimer's Disease</CardTitle>
+            </CardHeader>
+            <CardBody>
+              <img src={alzheimersImage} alt="Alzheimer's" style={{ width: '30%' }} />
+              <img src={second} alt="second" className="second-image" style={{ width: '35%' }} />
+              <img src={third} alt="Third Image" className="third-image" style={{ width: '35%' }} /> {/* Adjust the width */}
+              
+              <p>
+                Of the about 55 million people worldwide with dementia, 60% to 70% are estimated to have Alzheimer's disease.
+              </p>
+            </CardBody>
+          </Card>
+        </Col>
+      </Row>
+
+      {/* Cards Section */}
       <Row>
         <Col md="4">
           <Card className="card-chart">
@@ -78,25 +97,7 @@ function Dashboard() {
           </Card>
         </Col>
       </Row>
-      {/* Alzheimer's Card */}
-      <Row>
-        <Col md="12">
-          <Card className="card-chart">
-            <CardHeader>
-              <CardTitle tag="h2">About Alzheimer's Disease</CardTitle>
-            </CardHeader>
-            <CardBody>
-              <img src={alzheimersImage} alt="Alzheimer's" style={{ width: '30%' }} />
-              <img src={second} alt="second" className="second-image" style={{ width: '35%' }} />
-              <img src={third} alt="Third Image" className="third-image" style={{ width: '35%' }} /> {/* Adjust the width */}
-              
-              <p>
-                Of the about 55 million people worldwide with dementia, 60% to 70% are estimated to have Alzheimer's disease.
-              </p>
-            </CardBody>
-          </Card>
-        </Col>
-      </Row>
+
       {/* Bar Graph */}
       <Row>
         <Col md="12">
