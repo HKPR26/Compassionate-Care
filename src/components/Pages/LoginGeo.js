@@ -34,14 +34,15 @@ const LoginGeo = () => {
 
   return (
     <div
-      className="auth-wrapper"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        minHeight: "100vh", // Ensure background covers the whole viewport
-      }}
-    >
+    className="auth-wrapper d-flex justify-content-center align-items-center"
+    style={{
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      minHeight: "100vh", // Ensure background covers the whole viewport
+    }}
+  >
+  
       <Container className="justify-content-center text-center height mid bag">
         <Row
           xs={1}

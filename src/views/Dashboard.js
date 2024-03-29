@@ -2,6 +2,10 @@ import React from "react";
 import { Card, CardBody, CardHeader, CardTitle, Col, Row } from "reactstrap";
 import { Line, Pie, Bar } from "react-chartjs-2";
 import backgroundImage from "../assets/homeee.png"; // Import your background image
+import alzheimersImage from "../assets/6425307.jpg";
+import second from "../assets/favicon.png";
+import third from "../assets/hehe.jpg"
+ // Import Alzheimer's image
 import "./Dashboard.css"; // Import CSS for animations
 
 function Dashboard() {
@@ -70,6 +74,25 @@ function Dashboard() {
                   <li key={index}>{feature}</li>
                 ))}
               </ul>
+            </CardBody>
+          </Card>
+        </Col>
+      </Row>
+      {/* Alzheimer's Card */}
+      <Row>
+        <Col md="12">
+          <Card className="card-chart">
+            <CardHeader>
+              <CardTitle tag="h2">About Alzheimer's Disease</CardTitle>
+            </CardHeader>
+            <CardBody>
+              <img src={alzheimersImage} alt="Alzheimer's" style={{ width: '30%' }} />
+              <img src={second} alt="second" className="second-image" style={{ width: '35%' }} />
+              <img src={third} alt="Third Image" className="third-image" style={{ width: '35%' }} /> {/* Adjust the width */}
+              
+              <p>
+                Of the about 55 million people worldwide with dementia, 60% to 70% are estimated to have Alzheimer's disease.
+              </p>
             </CardBody>
           </Card>
         </Col>
