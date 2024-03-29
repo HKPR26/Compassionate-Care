@@ -91,39 +91,39 @@ export default class SignUp extends Component {
   }
 
   handleSubmit(e) {
-   e.preventDefault();
-  if (this.state.verified) {
-    const { fname, lname, email, mobile, password } = this.state;
-    fetch("http://localhost:5000/register", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        fname,
-        email,
-        lname,
-        mobile,
-        password,
-      }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data, "userRegister");
-        if (data.status === "ok") {
-          alert("Registration Successful");
-        } else {
-          alert("Something went wrong");
-        }
+    e.preventDefault();
+    if (this.state.verified) {
+      const { fname, lname, email, mobile, password } = this.state;
+      fetch("http://localhost:5000/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          fname,
+          email,
+          lname,
+          mobile,
+          password,
+        }),
       })
-      .catch((error) => {
-        console.error("Error registering user:", error);
-        alert("Error registering user. Please try again later.");
-      });
-     } else {
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data, "userRegister");
+          if (data.status === "ok") {
+            alert("Registration Successful");
+          } else {
+            alert("Something went wrong");
+          }
+        })
+        .catch((error) => {
+          console.error("Error registering user:", error);
+          alert("Error registering user. Please try again later.");
+        });
+    } else {
       alert("Please Verify Mobile");
-     }
+    }
   }
 
   render() {
@@ -139,7 +139,7 @@ export default class SignUp extends Component {
       >
         <div className="auth-inner">
           <form onSubmit={this.handleSubmit}>
-          <h2 style={{ textAlign: "center", fontFamily: "Bebas Neue" }}>Welcome To CC </h2> {/* Change font family using inline style */}
+          <h2 style={{ textAlign: "center", fontFamily: "Bebas Neue" }}>Welcome To CC 🤝</h2> {/* Change font family using inline style and add the handshake emoji */}
             <div id="recaptcha-container"></div>
             <div className="mb-3">
               <label>First name</label>
