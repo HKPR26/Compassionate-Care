@@ -139,7 +139,7 @@ export default class SignUp extends Component {
       >
         <div className="auth-inner">
           <form onSubmit={this.handleSubmit}>
-          <h2 style={{ textAlign: "center", fontFamily: "Bebas Neue" }}>Sign Up</h2> {/* Change font family using inline style */}
+          <h2 style={{ textAlign: "center", fontFamily: "Bebas Neue" }}>Welcome To CC </h2> {/* Change font family using inline style */}
             <div id="recaptcha-container"></div>
             <div className="mb-3">
               <label>First name</label>
