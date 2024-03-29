@@ -14,6 +14,7 @@ export default class Login extends Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
+
   // Login component
   handleSubmit(e) {
     e.preventDefault();
@@ -49,22 +50,24 @@ export default class Login extends Component {
         toast("Login failed. Please try again.", { type: "error" });
       });
   }
-  
+
   render() {
-    return ( 
+    return (
       <div
-      className="auth-wrapper"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        minHeight: "100vh", // Ensure background covers the whole viewport
-      }}
+        className="auth-wrapper"
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          minHeight: "100vh", // Ensure background covers the whole viewport
+        }}
       >
         <div className="auth-inner">
           <form onSubmit={this.handleSubmit}>
             <ToastContainer />
-            <h2 style={{ textAlign: "center", fontFamily: "Bebas Neue" }}>Sign In</h2> {/* Change font family using inline style */}
+            <h2 style={{ textAlign: "center", fontFamily: "Bebas Neue" }}>
+              Welcome Back 😀
+            </h2> {/* Added the smiling emoji after Welcome Back */}
 
             <div className="mb-3">
               <label>Email address</label>
@@ -111,7 +114,6 @@ export default class Login extends Component {
           </form>
         </div>
       </div>
-
     );
   }
 }
