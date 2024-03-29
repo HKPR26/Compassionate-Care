@@ -67,7 +67,7 @@ export default class Login extends Component {
             <h2 style={{ textAlign: "center", fontFamily: "Bebas Neue" }}>Sign In</h2> {/* Change font family using inline style */}
 
             <div className="mb-3">
-              <label>E-mail address</label>
+              <label>Email address</label>
               <input
                 type="email"
                 className="form-control"
